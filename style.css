@@ -19,7 +19,6 @@
 }
 
 .content{
-    border:1px solid white;
     align-items:center;
     justify-content:center;
     display:flex;
@@ -31,5 +30,68 @@
     text-align:center;
     color:white;
     font-family:'Nunito',sans-serif;
-    font-size:3rem;
+    font-size:4rem;
+}
+
+.texto{
+    text-align:center;
+    color:white;
+    font-family:'Nunito',sans-serif;
+    font-size:1.5em;
+}
+
+
+
+.input{
+    background-color: white;
+    border:none;
+    outline:none;
+    text-align: center;
+    border-radius:20px;
+    width: 100%;
+    max-width:600px;
+    height: 60px;
+    font-size:1.5em;
+    padding-left: 20px;
+    color:#585858;
+}
+
+.resposta{
+    text-align:center;
+    font-family:'Nunito',sans-serif;
+    font-size:1.5em;   
+}
+
+.buttonContent{
+    display: flex;
+    gap:20px;
+}
+
+.button{
+    background-color: transparent;
+    font-family: 'Nunito';
+    border:1px solid white;
+    color:white;
+    border-radius:20px;
+    padding:12px 100px;
+    font-size:1.5em;
+}
+
+.enviar:hover{
+    background-color: #4299E1;
+    border-style:none;
+}
+.reset:hover{
+    background-color: #ffcd45;
+    border-style:none;
+}
+
+
+@media (max-width:600px){
+    .content{gap:2.2em;}
+    .titulo{ font-size: 2.9rem; }
+    .texto{ padding: 0px 10px; }
+    .resposta{ padding-left: 0px 10px;}
+    .input{width: 90%;}
+    .buttonContent{ flex-direction: column; }
 }
