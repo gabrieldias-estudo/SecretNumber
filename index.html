@@ -8,19 +8,25 @@
 </head>
 <body>
     <section class="container">
-        <div class="content">
+        <div id="teste" class="content">
             <h1 class="titulo">Bem vindo ao Jogo Secret Number</h1>
+            <select id="dificuldade" class="input dificuldade" >
+                    <option value="fácil">Fácil</option>
+                    <option value="médio">Médio</option>
+                    <option value="difícil">Difícil</option>
+                    <option value="impossivel">Impossível</option>
+            </select>
             <p class="texto">Digite um número de 1 a 10 e tente a sorte!</p>
             <input  type="number" class="input">
             <p id="resposta" class="resposta"></p>
             <div class="buttonContent">
                 <button onclick="verificarChute()" class="button enviar">Enviar</button>
-                <button class="button reset">Resetar</button>
+                <button onclick="resetGame()" id="reiniciar" class="button reset" disabled>Resetar</button>
             </div>
             
         </div>
         
     </section>
-    <script src="./app.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

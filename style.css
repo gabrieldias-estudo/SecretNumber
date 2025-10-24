@@ -56,6 +56,13 @@
     color:#585858;
 }
 
+
+.dificuldade{
+    max-width:300px;
+}
+
+
+
 .resposta{
     text-align:center;
     font-family:'Nunito',sans-serif;
@@ -84,6 +91,12 @@
 .reset:hover{
     background-color: #ffcd45;
     border-style:none;
+}
+
+.reset:disabled{
+    background-color: #5858587a;
+    color:#d8d8d8;
+    border-color: #d8d8d8 ;
 }
 
 
