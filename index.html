@@ -10,13 +10,13 @@
     <section class="container">
         <div id="teste" class="content">
             <h1 class="titulo">Bem vindo ao Jogo Secret Number</h1>
-            <select id="dificuldade" class="input dificuldade" >
+            <select id="dificuldade" class="input dificuldade" onchange="alterarDificuldade()" >
                     <option value="fácil">Fácil</option>
                     <option value="médio">Médio</option>
                     <option value="difícil">Difícil</option>
-                    <option value="impossivel">Impossível</option>
+                    <option value="impossível">Impossível</option>
             </select>
-            <p class="texto">Digite um número de 1 a 10 e tente a sorte!</p>
+            <p id="texto" class="texto">Digite um número de 1 a 10 e tente a sorte!</p>
             <input  type="number" class="input">
             <p id="resposta" class="resposta"></p>
             <div class="buttonContent">
